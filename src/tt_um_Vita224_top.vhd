@@ -3,7 +3,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_ARITH.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
-entity tt_um_Vita224_top is
+entity tt_um_Vita224_core is
     port(
         clock_in : in std_logic;
         reset : in std_logic;
@@ -12,9 +12,9 @@ entity tt_um_Vita224_top is
         LED_out : out std_logic_vector(6 downto 0);
         RxD: in STD_LOGIC
     );
-end tt_um_Vita224_top;
+end tt_um_Vita224_core;
 
-architecture Behavioral of tt_um_Vita224_top is
+architecture Behavioral of tt_um_Vita224_core is
     signal cpu_op : std_logic_vector(7 downto 0);
     signal refresh_counter : std_logic_vector(19 downto 0) := (others => '0');
     signal LED_BCD : std_logic_vector(3 downto 0);
@@ -92,5 +92,6 @@ begin
     end process;
 
 end Behavioral;
+
 
 
