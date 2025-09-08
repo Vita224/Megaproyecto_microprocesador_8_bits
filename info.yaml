@@ -25,6 +25,7 @@ project:
     - "Receiver_RxD.vhd"
     - "reg.vhd"
     - "tt_um_Vita224_top.vhd"
+    - "tt_um_Vita224_top.v"
     
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
