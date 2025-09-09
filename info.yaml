@@ -24,7 +24,7 @@ project:
     - "pc.vhd"
     - "Receiver_RxD.vhd"
     - "reg.vhd"
-    - "tt_um_Vita224_top.vhd"
+    - "tt_um_Vita224_core.vhd"
     - "tt_um_Vita224_top.v"
     
 
